@@ -1,0 +1,12 @@
+C:\Users\99451\source\repos\RentaCar\RentaCar.DataAccessLayer\bin\Debug\net6.0\RentaCar.DataAccessLayer.deps.json
+C:\Users\99451\source\repos\RentaCar\RentaCar.DataAccessLayer\bin\Debug\net6.0\RentaCar.DataAccessLayer.dll
+C:\Users\99451\source\repos\RentaCar\RentaCar.DataAccessLayer\bin\Debug\net6.0\RentaCar.DataAccessLayer.pdb
+C:\Users\99451\source\repos\RentaCar\RentaCar.DataAccessLayer\obj\Debug\net6.0\RentaCar.DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\99451\source\repos\RentaCar\RentaCar.DataAccessLayer\obj\Debug\net6.0\RentaCar.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\99451\source\repos\RentaCar\RentaCar.DataAccessLayer\obj\Debug\net6.0\RentaCar.DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\99451\source\repos\RentaCar\RentaCar.DataAccessLayer\obj\Debug\net6.0\RentaCar.DataAccessLayer.AssemblyInfo.cs
+C:\Users\99451\source\repos\RentaCar\RentaCar.DataAccessLayer\obj\Debug\net6.0\RentaCar.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\99451\source\repos\RentaCar\RentaCar.DataAccessLayer\obj\Debug\net6.0\RentaCar.DataAccessLayer.dll
+C:\Users\99451\source\repos\RentaCar\RentaCar.DataAccessLayer\obj\Debug\net6.0\refint\RentaCar.DataAccessLayer.dll
+C:\Users\99451\source\repos\RentaCar\RentaCar.DataAccessLayer\obj\Debug\net6.0\RentaCar.DataAccessLayer.pdb
+C:\Users\99451\source\repos\RentaCar\RentaCar.DataAccessLayer\obj\Debug\net6.0\ref\RentaCar.DataAccessLayer.dll
