@@ -9,4 +9,5 @@ public class CarImage : BaseEntity
     public Car Car { get; set; }
     public int ImageId { get; set; }
     public Image Image { get; set; }
+    public bool IsMain { get; set; }
 }

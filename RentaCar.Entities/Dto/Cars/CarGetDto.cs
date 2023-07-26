@@ -1,13 +1,15 @@
-﻿using RentaCar.Entities.Concrete.Common;
+﻿using Core.Utilities.Entities.Abstract;
+using RentaCar.Entities.Concrete;
 
-namespace RentaCar.Entities.Concrete;
+namespace RentaCar.Entities.Dto.Cars;
 
-public class Car : BaseAuditableEntity
+public class CarGetDto : IDto
 {
-    public Car()
+    public CarGetDto()
     {
         CarImages = new List<CarImage>();
     }
+    public int Id { get; set; }
     public DateTime ModelYear { get; set; } = default!;
     public int DailyPrice { get; set; }
     public string Description { get; set; }
