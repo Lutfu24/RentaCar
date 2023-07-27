@@ -10,11 +10,8 @@ public class AppDbContext : DbContext
     {
     }
 
-    public DbSet<Car> Cars { get; set; } = default!;
-    public DbSet<Brand> Brands { get; set; } = default!;
-    public DbSet<Color> Colors { get; set; } = default!;
-    public DbSet<Image> Images { get; set; } = default!;
-    public DbSet<CarImage> CarImages { get; set; } = default!;
+    public DbSet<Car> Cars { get; set; }
+    public DbSet<Brand> Brands { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(CarConfiguration).Assembly);

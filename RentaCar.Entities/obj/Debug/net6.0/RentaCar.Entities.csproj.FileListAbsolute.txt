@@ -1,0 +1,15 @@
+C:\Users\99451\source\repos\RentaCar\RentaCar.Entities\bin\Debug\net6.0\RentaCar.Entities.deps.json
+C:\Users\99451\source\repos\RentaCar\RentaCar.Entities\bin\Debug\net6.0\RentaCar.Entities.dll
+C:\Users\99451\source\repos\RentaCar\RentaCar.Entities\bin\Debug\net6.0\RentaCar.Entities.pdb
+C:\Users\99451\source\repos\RentaCar\RentaCar.Entities\bin\Debug\net6.0\Core.dll
+C:\Users\99451\source\repos\RentaCar\RentaCar.Entities\bin\Debug\net6.0\Core.pdb
+C:\Users\99451\source\repos\RentaCar\RentaCar.Entities\obj\Debug\net6.0\RentaCar.Entities.csproj.AssemblyReference.cache
+C:\Users\99451\source\repos\RentaCar\RentaCar.Entities\obj\Debug\net6.0\RentaCar.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\99451\source\repos\RentaCar\RentaCar.Entities\obj\Debug\net6.0\RentaCar.Entities.AssemblyInfoInputs.cache
+C:\Users\99451\source\repos\RentaCar\RentaCar.Entities\obj\Debug\net6.0\RentaCar.Entities.AssemblyInfo.cs
+C:\Users\99451\source\repos\RentaCar\RentaCar.Entities\obj\Debug\net6.0\RentaCar.Entities.csproj.CoreCompileInputs.cache
+C:\Users\99451\source\repos\RentaCar\RentaCar.Entities\obj\Debug\net6.0\RentaCar.Entities.csproj.CopyComplete
+C:\Users\99451\source\repos\RentaCar\RentaCar.Entities\obj\Debug\net6.0\RentaCar.Entities.dll
+C:\Users\99451\source\repos\RentaCar\RentaCar.Entities\obj\Debug\net6.0\refint\RentaCar.Entities.dll
+C:\Users\99451\source\repos\RentaCar\RentaCar.Entities\obj\Debug\net6.0\RentaCar.Entities.pdb
+C:\Users\99451\source\repos\RentaCar\RentaCar.Entities\obj\Debug\net6.0\ref\RentaCar.Entities.dll

@@ -1,0 +1,12 @@
+C:\Users\99451\source\repos\RentaCar\RentaCar.BusinessLogic\bin\Debug\net6.0\RentaCar.BusinessLogic.deps.json
+C:\Users\99451\source\repos\RentaCar\RentaCar.BusinessLogic\bin\Debug\net6.0\RentaCar.BusinessLogic.dll
+C:\Users\99451\source\repos\RentaCar\RentaCar.BusinessLogic\bin\Debug\net6.0\RentaCar.BusinessLogic.pdb
+C:\Users\99451\source\repos\RentaCar\RentaCar.BusinessLogic\obj\Debug\net6.0\RentaCar.BusinessLogic.csproj.AssemblyReference.cache
+C:\Users\99451\source\repos\RentaCar\RentaCar.BusinessLogic\obj\Debug\net6.0\RentaCar.BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\99451\source\repos\RentaCar\RentaCar.BusinessLogic\obj\Debug\net6.0\RentaCar.BusinessLogic.AssemblyInfoInputs.cache
+C:\Users\99451\source\repos\RentaCar\RentaCar.BusinessLogic\obj\Debug\net6.0\RentaCar.BusinessLogic.AssemblyInfo.cs
+C:\Users\99451\source\repos\RentaCar\RentaCar.BusinessLogic\obj\Debug\net6.0\RentaCar.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\99451\source\repos\RentaCar\RentaCar.BusinessLogic\obj\Debug\net6.0\RentaCar.BusinessLogic.dll
+C:\Users\99451\source\repos\RentaCar\RentaCar.BusinessLogic\obj\Debug\net6.0\refint\RentaCar.BusinessLogic.dll
+C:\Users\99451\source\repos\RentaCar\RentaCar.BusinessLogic\obj\Debug\net6.0\RentaCar.BusinessLogic.pdb
+C:\Users\99451\source\repos\RentaCar\RentaCar.BusinessLogic\obj\Debug\net6.0\ref\RentaCar.BusinessLogic.dll
