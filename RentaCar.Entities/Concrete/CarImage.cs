@@ -2,7 +2,7 @@
 
 namespace RentaCar.Entities.Concrete;
 
-public class CarImage : BaseEntity
+public class CarImage : BaseAuditableEntity
 {
     public string Name { get; set; }
     public int CarId { get; set; }
