@@ -10,3 +10,10 @@ C:\Users\99451\source\repos\RentaCar\RentaCar.BusinessLogic\obj\Debug\net6.0\Ren
 C:\Users\99451\source\repos\RentaCar\RentaCar.BusinessLogic\obj\Debug\net6.0\refint\RentaCar.BusinessLogic.dll
 C:\Users\99451\source\repos\RentaCar\RentaCar.BusinessLogic\obj\Debug\net6.0\RentaCar.BusinessLogic.pdb
 C:\Users\99451\source\repos\RentaCar\RentaCar.BusinessLogic\obj\Debug\net6.0\ref\RentaCar.BusinessLogic.dll
+C:\Users\99451\source\repos\RentaCar\RentaCar.BusinessLogic\bin\Debug\net6.0\Core.dll
+C:\Users\99451\source\repos\RentaCar\RentaCar.BusinessLogic\bin\Debug\net6.0\RentaCar.DataAccessLayer.dll
+C:\Users\99451\source\repos\RentaCar\RentaCar.BusinessLogic\bin\Debug\net6.0\RentaCar.Entities.dll
+C:\Users\99451\source\repos\RentaCar\RentaCar.BusinessLogic\bin\Debug\net6.0\RentaCar.DataAccessLayer.pdb
+C:\Users\99451\source\repos\RentaCar\RentaCar.BusinessLogic\bin\Debug\net6.0\RentaCar.Entities.pdb
+C:\Users\99451\source\repos\RentaCar\RentaCar.BusinessLogic\bin\Debug\net6.0\Core.pdb
+C:\Users\99451\source\repos\RentaCar\RentaCar.BusinessLogic\obj\Debug\net6.0\RentaCar.BusinessLogic.csproj.CopyComplete

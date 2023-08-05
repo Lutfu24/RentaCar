@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using RentaCar.DataAccessLayer.Abstract;
+using RentaCar.DataAccessLayer.Concrete;
 using RentaCar.DataAccessLayer.Persistance.Context.EfCore;
 using RentaCar.DataAccessLayer.Persistance.Interceptors;
 
@@ -14,6 +16,7 @@ public static class DataAccessConfiguration
         options.UseSqlServer(configuration.GetConnectionString("Default")));
         services.AddHttpContextAccessor();
         services.AddScoped<BaseAuditableEntityInterceptor>();
+        services.AddScoped<ICarRepository, CarRepository>();
 
         return services;
     }

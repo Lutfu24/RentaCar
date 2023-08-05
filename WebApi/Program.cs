@@ -1,3 +1,4 @@
+using RentaCar.BusinessLogic;
 using RentaCar.DataAccessLayer;
 namespace WebAPI
 {
@@ -9,8 +10,10 @@ namespace WebAPI
 
             // Add services to the container.
 
-            builder.Services.AddControllers();
+            builder.Services.AddControllers().AddNewtonsoftJson(op =>
+            op.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             builder.Services.AddDataAccessServices(builder.Configuration);
+            builder.Services.AddBusinessService();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
