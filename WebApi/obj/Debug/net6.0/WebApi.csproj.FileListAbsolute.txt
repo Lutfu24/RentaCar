@@ -78,3 +78,5 @@ C:\Users\99451\source\repos\RentaCar\WebAPI\bin\Debug\net6.0\Microsoft.AspNetCor
 C:\Users\99451\source\repos\RentaCar\WebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\99451\source\repos\RentaCar\WebAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\99451\source\repos\RentaCar\WebAPI\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\99451\source\repos\RentaCar\WebAPI\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\99451\source\repos\RentaCar\WebAPI\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

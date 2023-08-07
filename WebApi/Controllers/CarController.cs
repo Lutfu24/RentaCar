@@ -16,28 +16,21 @@ public class CarController : ControllerBase
         _carService = carService;
     }
 
+    [HttpGet("GetAll")]
     public async Task<IActionResult> GetAll()
     {
         var result = await _carService.GetAll();
         if (result.Count > 0)
         {
-            return Ok();
+            return Ok(result);
         }
         return BadRequest();
     }
 
+    [HttpPost("Add")]
     public async Task<IActionResult> Add(CarCreateDto carCreateDto)
     {
-        Car car = new Car()
-        {
-            ModelYear = carCreateDto.ModelYear,
-            Description = carCreateDto.Description,
-            DailyPrice = carCreateDto.DailyPrice,
-            BrandId = carCreateDto.BrandId,
-            ColorId = carCreateDto.ColorId,
-            IsDeleted = false
-        };
-        await _carService.Add(car);
+        await _carService.Add(carCreateDto);
         return Ok();
     }
 }

@@ -33,12 +33,14 @@ public class BaseAuditableEntityInterceptor : SaveChangesInterceptor
         {
             if (entry.State==EntityState.Added)
             {
-                entry.Entity.CreatedBy = _httpContextAccessor.HttpContext.User.Identity.Name;
+                //entry.Entity.CreatedBy = _httpContextAccessor.HttpContext.User.Identity.Name;
+                entry.Entity.CreatedBy = "Lutfu";
                 entry.Entity.CreatedAt = DateTime.Now;
             }
             else if (entry.State==EntityState.Modified)
             {
-                entry.Entity.UpdateBy = _httpContextAccessor.HttpContext.User.Identity.Name;
+                //entry.Entity.UpdateBy = _httpContextAccessor.HttpContext.User.Identity.Name;
+                entry.Entity.UpdateBy = "Lutvu";
                 entry.Entity.UpdateAt = DateTime.Now;
             }
         }

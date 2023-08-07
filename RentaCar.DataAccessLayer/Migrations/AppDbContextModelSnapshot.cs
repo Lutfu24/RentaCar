@@ -58,7 +58,6 @@ namespace RentaCar.DataAccessLayer.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("CreatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("DailyPrice")
@@ -79,7 +78,6 @@ namespace RentaCar.DataAccessLayer.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("UpdateBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -106,7 +104,6 @@ namespace RentaCar.DataAccessLayer.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("CreatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("ImageId")
@@ -123,7 +120,6 @@ namespace RentaCar.DataAccessLayer.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("UpdateBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
