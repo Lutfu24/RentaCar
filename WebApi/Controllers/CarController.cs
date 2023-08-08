@@ -20,17 +20,21 @@ public class CarController : ControllerBase
     public async Task<IActionResult> GetAll()
     {
         var result = await _carService.GetAll();
-        if (result.Count > 0)
+        if (result.Success)
         {
             return Ok(result);
         }
-        return BadRequest();
+        return BadRequest(result);
     }
 
     [HttpPost("Add")]
     public async Task<IActionResult> Add(CarCreateDto carCreateDto)
     {
-        await _carService.Add(carCreateDto);
-        return Ok();
+        var result = await _carService.Add(carCreateDto);
+        if (result.Success)
+        {
+            return Ok(result);
+        }
+        return BadRequest(result);
     }
 }

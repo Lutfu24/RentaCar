@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using FluentValidation;
+using Microsoft.Extensions.DependencyInjection;
 using RentaCar.BusinessLogic.Abstract;
 using RentaCar.BusinessLogic.Concrete;
 using System.Reflection;
@@ -11,6 +12,7 @@ public static class BusinessConfigurationService
     {
         service.AddScoped<ICarService, CarService>();
         service.AddAutoMapper(Assembly.GetExecutingAssembly());
+        service.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
         return service;
     }

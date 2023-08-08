@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Core.Utilities.Result.Abstract;
+using Core.Utilities.Result.Concrete;
 using RentaCar.BusinessLogic.Abstract;
 using RentaCar.DataAccessLayer.Abstract;
 using RentaCar.Entities.Concrete;
@@ -17,51 +19,55 @@ public class CarService : ICarService
         _mapper = mapper;
     }
 
-    public async Task Add(CarCreateDto carDto)
+    public async Task<IResult> Add(CarCreateDto carDto)
     {
         Car car = _mapper.Map<Car>(carDto);
         if (car is not null)
         {
             await _carRepository.AddAsync(car);
         }
+        return new SuccessResult("Car added");
     }
 
-    public async Task Delete(Car car)
+    public async Task<IResult> Delete(Car car)
     {
         if (car is not null)
         {
             await _carRepository.DeleteAsync(car);
         }
+        return new SuccessResult("Car deleted");
     }
 
-    public async Task DeleteById(int id)
+    public async Task<IResult> DeleteById(int id)
     {
-        CarGetDto carDto = await GetById(id);
-        Car car = _mapper.Map<Car>(carDto);
+        IDataResult<CarGetDto> result = await GetById(id);
+        Car car = _mapper.Map<Car>(result);
         if (car is not null)
         {
             await _carRepository.DeleteAsync(car);
         }
+        return new SuccessResult($"Id: {id} car deleted");
     }
 
-    public async Task<List<CarGetDto>> GetAll()
+    public async Task<IDataResult<List<CarGetDto>>> GetAll()
     {
         List<Car> cars = await _carRepository.GetAllAsync(includes: new string[] {"Brand", "Color"});
-        return _mapper.Map<List<CarGetDto>>(cars);
+        return new SuccessDataResult<List<CarGetDto>>(_mapper.Map<List<CarGetDto>>(cars),true,"Cars listed");
     }
 
-    public async Task<CarGetDto> GetById(int id)
+    public async Task<IDataResult<CarGetDto>> GetById(int id)
     {
         Car car = await _carRepository.GetAsync(c => c.Id == id);
-        return _mapper.Map<CarGetDto>(car);
+        return new SuccessDataResult<CarGetDto>(_mapper.Map<CarGetDto>(car));
     }
 
-    public async Task<bool> IsExistById(int id)
+    public async Task<IDataResult<bool>> IsExistById(int id)
     {
-        return await _carRepository.IsExistAsync(c => c.Id == id);
+        bool result = await _carRepository.IsExistAsync(c => c.Id == id);
+        return new SuccessDataResult<bool>(result);
     }
 
-    public async Task Update(CarUpdateDto carDto)
+    public async Task<IResult> Update(CarUpdateDto carDto)
     {
         Car existsCar = await _carRepository.GetAsync(c => c.Id == carDto.Id);
         if (existsCar is not null)
@@ -69,5 +75,6 @@ public class CarService : ICarService
             Car car = _mapper.Map(carDto, existsCar);
             await _carRepository.UpdateAsync(car);
         }
+        return new SuccessResult("Car updated");
     }
 }

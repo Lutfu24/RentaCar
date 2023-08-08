@@ -13,19 +13,16 @@ public class BaseAuditableEntityInterceptor : SaveChangesInterceptor
     {
         _httpContextAccessor = httpContextAccessor;
     }
-
-    public override int SavedChanges(SaveChangesCompletedEventData eventData, int result)
+    public override InterceptionResult<int> SavingChanges(DbContextEventData eventData, InterceptionResult<int> result)
     {
         UpdateEntity(eventData.Context);
-        return base.SavedChanges(eventData, result);
+        return base.SavingChanges(eventData, result);
     }
-
-    public override ValueTask<int> SavedChangesAsync(SaveChangesCompletedEventData eventData, int result, CancellationToken cancellationToken = default)
+    public override ValueTask<InterceptionResult<int>> SavingChangesAsync(DbContextEventData eventData, InterceptionResult<int> result, CancellationToken cancellationToken = default)
     {
         UpdateEntity(eventData.Context);
-        return base.SavedChangesAsync(eventData, result, cancellationToken);
+        return base.SavingChangesAsync(eventData, result, cancellationToken);
     }
-
     void UpdateEntity(DbContext context)
     {
         if (context is null) return;

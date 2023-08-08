@@ -1,3 +1,4 @@
+using FluentValidation.AspNetCore;
 using RentaCar.BusinessLogic;
 using RentaCar.DataAccessLayer;
 namespace WebAPI
@@ -14,6 +15,8 @@ namespace WebAPI
             op.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             builder.Services.AddDataAccessServices(builder.Configuration);
             builder.Services.AddBusinessService();
+            builder.Services.AddFluentValidationAutoValidation(x => x.DisableDataAnnotationsValidation = true)
+                .AddFluentValidationClientsideAdapters();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
