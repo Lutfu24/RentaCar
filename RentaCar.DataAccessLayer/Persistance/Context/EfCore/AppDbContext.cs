@@ -1,11 +1,13 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Core.Entities.Concrete.Auth;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using RentaCar.DataAccessLayer.Persistance.Interceptors;
 using RentaCar.Entities.Concrete;
 using System.Reflection;
 
 namespace RentaCar.DataAccessLayer.Persistance.Context.EfCore;
 
-public class AppDbContext : DbContext
+public class AppDbContext : IdentityDbContext<AppUser>
 {
     private readonly BaseAuditableEntityInterceptor _baseAuditableEntityInterceptor;
 

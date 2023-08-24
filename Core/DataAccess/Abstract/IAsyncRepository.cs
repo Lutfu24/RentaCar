@@ -1,9 +1,9 @@
-﻿using Core.Utilities.Entities.Abstract;
+﻿using Core.Entities.Abstract;
 using System.Linq.Expressions;
 
-namespace Core.Utilities.DataAccess.Abstract;
+namespace Core.DataAccess.Abstract;
 
-public interface IAsyncRepository<T> where T: class, IEntity, new()
+public interface IAsyncRepository<T> where T : class, IEntity, new()
 {
     Task<List<T>> GetAllAsync(Expression<Func<T, bool>> expression = null, string[] includes = null, bool tracking = true, CancellationToken cancellationToken = default);
     Task<T> GetAsync(Expression<Func<T, bool>> expression, string[] includes = null, bool tracking = true, CancellationToken cancellationToken = default);

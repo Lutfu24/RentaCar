@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Core.Entities.Concrete.Auth;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using RentaCar.DataAccessLayer.Abstract;
@@ -14,6 +16,12 @@ public static class DataAccessConfiguration
     {
         services.AddDbContext<AppDbContext>(options => 
         options.UseSqlServer(configuration.GetConnectionString("Default")));
+        services.AddIdentity<AppUser, IdentityRole>(op =>
+        {
+            op.Password.RequireLowercase = false;
+            op.Lockout.MaxFailedAccessAttempts = 3;
+        }).AddDefaultTokenProviders().AddEntityFrameworkStores<AppDbContext>();
+
         services.AddHttpContextAccessor();
         services.AddScoped<BaseAuditableEntityInterceptor>();
         services.AddScoped<ICarRepository, CarRepository>();

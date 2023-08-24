@@ -1,4 +1,4 @@
-﻿using Core.Utilities.Entities.Abstract;
+﻿using Core.Entities.Abstract;
 
 namespace RentaCar.Entities.Concrete.Common;
 

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using RentaCar.BusinessLogic.Abstract;
 using RentaCar.Entities.Concrete;
 using RentaCar.Entities.Dto.Cars;
@@ -7,6 +8,7 @@ namespace WebAPI.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
+[Authorize]
 public class CarController : ControllerBase
 {
     private readonly ICarService _carService;

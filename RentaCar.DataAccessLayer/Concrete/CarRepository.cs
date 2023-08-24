@@ -1,4 +1,4 @@
-﻿using Core.Utilities.DataAccess.Concrete.EfCore;
+﻿using Core.DataAccess.Concrete.EfCore;
 using RentaCar.DataAccessLayer.Abstract;
 using RentaCar.DataAccessLayer.Persistance.Context.EfCore;
 using RentaCar.Entities.Concrete;

@@ -1,9 +1,9 @@
-﻿using Core.Utilities.DataAccess.Abstract;
-using Core.Utilities.Entities.Abstract;
+﻿using Core.DataAccess.Abstract;
+using Core.Entities.Abstract;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
-namespace Core.Utilities.DataAccess.Concrete.EfCore;
+namespace Core.DataAccess.Concrete.EfCore;
 
 public abstract class EfBaseRepository<TEntity, TContext> : IRepository<TEntity>, IAsyncRepository<TEntity>
     where TEntity : class, IEntity, new()

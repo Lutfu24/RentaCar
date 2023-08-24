@@ -1,9 +1,9 @@
-﻿using Core.Utilities.Entities.Abstract;
+﻿using Core.Entities.Abstract;
 using System.Linq.Expressions;
 
-namespace Core.Utilities.DataAccess.Abstract;
+namespace Core.DataAccess.Abstract;
 
-public interface IRepository<T> where T: class, IEntity, new()
+public interface IRepository<T> where T : class, IEntity, new()
 {
     List<T> GetAll(Expression<Func<T, bool>> expression = null, string[] includes = null, bool tracking = true);
     T Get(Expression<Func<T, bool>> expression, string[] includes = null, bool tracking = true);
